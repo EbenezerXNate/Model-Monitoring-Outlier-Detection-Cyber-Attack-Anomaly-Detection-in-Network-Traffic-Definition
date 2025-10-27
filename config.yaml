@@ -1,0 +1,21 @@
+
+model:
+  type: "IsolationForest"
+  n_estimators: 150
+  contamination: 0.01
+  
+thresholds:
+  warning: 0.089
+  alert: 0.051
+  critical: -0.010
+
+features:
+  - duration
+  - protocol_type
+  - service
+  - src_bytes
+  - dst_bytes
+  - count
+  - srv_count
+  - dst_host_count
+  - dst_host_srv_count
